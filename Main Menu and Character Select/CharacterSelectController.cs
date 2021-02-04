@@ -211,26 +211,22 @@ public class CharacterSelectController : MonoBehaviour
         {
             _buttonClickSound.pitch = 1;
             _buttonClickSound.Play();
-            print("Select" + playerID);
             SelectButtonClick(playerID+1);
         }
         if (_playerIDToPlayer[playerID].GetButtonDown("Up"))
         {
             _buttonClickSound.pitch = 2;
             _buttonClickSound.Play();
-            print("Up" + playerID);
             UpButtonClick(playerID+1);
         }
         if (_playerIDToPlayer[playerID].GetButtonDown("Down"))
         {
             _buttonClickSound.pitch = 2;
             _buttonClickSound.Play();
-            print("Down" + playerID);
             DownButtonClick(playerID+1);
         }
         if (_playerIDToPlayer[playerID].GetButtonDown("Play"))
         {
-            print("Play" + playerID);
             PlayButtonClick();
         }
     }

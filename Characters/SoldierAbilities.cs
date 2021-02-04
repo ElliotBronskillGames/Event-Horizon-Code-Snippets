@@ -65,7 +65,6 @@ public class SoldierAbilities : MonoBehaviour
         // Set timers
         _rapidFireTimer = Time.time + _rapidFireCD;
         _soldier._canUseRF = false;
-        
     }
 
     /// <summary>

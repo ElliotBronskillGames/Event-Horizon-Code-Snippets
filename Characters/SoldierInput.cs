@@ -49,7 +49,6 @@ public class SoldierInput : Player
             _usedAbility1 = true;
             _abilities.rapidFire();
             _powerup.Play();
-            
         }
 
         // Ability 2: Grenade 
@@ -140,5 +139,4 @@ public class SoldierInput : Player
         _abilities._grenadeTimer = 0;
         _abilities._rapidFireTimer = 0;
     }
-    
 }

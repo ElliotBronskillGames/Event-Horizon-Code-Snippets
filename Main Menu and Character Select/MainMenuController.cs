@@ -5,6 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Rewired;
 
+/// <summary>
+/// Logic for the Main Menu.
+/// </summary>
 public class MainMenuController : MonoBehaviour
 {
     public GameObject _controlsMenu, _startButton, _controlsButton, _quitButton;

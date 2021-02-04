@@ -31,10 +31,7 @@ public class TankInput : Player
         _curMoveSpeed = _movementSpeed;
     }
 
-    void Start()
-    {
-        Initialize();     
-    }
+    void Start() => Initialize();
 
     new void Update()
     {
@@ -56,7 +53,6 @@ public class TankInput : Player
             _abilities.ShieldPlant();
             _setItem.Play();
             _canPlaceShield = false;
-            
         }
 
         // Ability 2: Ground Pound

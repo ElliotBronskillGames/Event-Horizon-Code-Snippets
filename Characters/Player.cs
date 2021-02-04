@@ -113,7 +113,7 @@ public class Player : MonoBehaviour
         }
 
         // Players Lost
-        if (_gameOverCanvas.activeSelf) // && player.controllers.joystickCount >= 1
+        if (_gameOverCanvas.activeSelf) 
         {
             _gameOver = true;
             if ((_player.GetButtonDown("Interact") || Input.GetKeyDown(KeyCode.E))) //&& player.controllers.joystickCount >= 1
@@ -402,7 +402,6 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("Ammo") || other.CompareTag("Healing"))
         {
-            print("Exit");
             _cantUse = false;
         }
     }
